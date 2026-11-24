@@ -7,7 +7,7 @@ def get_models():
     models = {
         "linear_model": LinearRegression(),
         "random_forest": RandomForestRegressor(random_state=42),
-        "knn": KNeighborsRegressor()
+        "knn": KNeighborsRegressor(n_neighbors=2)
     }
 
     return models

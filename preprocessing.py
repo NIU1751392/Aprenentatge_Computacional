@@ -5,6 +5,7 @@ def prepare_data(df):
     Separa les variables predictives (X)
     de la variable objectiu (y).
     """
+    df = df[df["year"] == 2015].copy() #FILTRAR PER L'ANY QUE VULGUEM
 
     features = [
         "quality_of_education",
